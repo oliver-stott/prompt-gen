@@ -1,21 +1,25 @@
 import "@styles/globals.css";
+import Nav from "@components/Nav";
+import Processor from "postcss/lib/processor";
 
 export const metadata = {
   title: 'PromptGen',
   description: 'Discover and share AI prompts'
 }
 
-const RootLayout = ( {children} ) => {
+const RootLayout = ({ children }) => {
   return (
-    <html lang="en"> 
+    <html lang="en">
       <body>
-          <div className="main">
-            <div className="gradient"></div>
-          </div>
+        <div className="main">
+          <div className="gradient"></div>
+        </div>
 
-          <main className="app">
-            {children}
-          </main>
+        <main className="app">
+          <Nav />
+
+          {children}
+        </main>
       </body>
     </html>
   )

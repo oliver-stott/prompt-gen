@@ -1,3 +1,5 @@
+import Feed from "@components/Feed"
+
 const Home = () => {
   return (
     <section className="wp-full flex-center flex-col">
@@ -10,8 +12,7 @@ const Home = () => {
         PromptGen is an open-source AI prompting tool created to help people find and share their creative prompts for the use with AI tools.
       </p>
 
-      {/* Feed COmponent will go here */}
-
+      <Feed />
     </section>
   )
 }
